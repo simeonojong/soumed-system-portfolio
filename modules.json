@@ -1,0 +1,434 @@
+[
+  {
+    "slug": "student-admissions",
+    "title": "Student admissions",
+    "category": "Students",
+    "summary": "Move student intake and admissions information into a consistent school workflow.",
+    "description": "Capture new student details in an admission workflow, choose the relevant school and academic context, and keep the resulting student record together for authorized school staff.",
+    "features": [
+      "Record an admission with student and academic details.",
+      "Review submitted online admission applications where enabled.",
+      "Import multiple student records using the available import workflow.",
+      "Print a blank admission form when the school workflow provides it."
+    ],
+    "keywords": ["new admissions", "registration", "online applications", "student intake", "student enrollment", "bulk import", "CSV"],
+    "image": "student-admission.png",
+    "imageAlt": "SouMed student admission form with academic and student detail fields.",
+    "imageCaption": "The student admission screen in the local SouMed training demo. Field requirements can differ by school.",
+    "availability": "Admission fields, application review, and imports depend on school setup and the permissions assigned to the user.",
+    "related": ["student-records", "school-administration"]
+  },
+  {
+    "slug": "student-records",
+    "title": "Student records",
+    "category": "Students",
+    "summary": "Find student profiles and review class placement, enrollment status, and student information.",
+    "description": "Authorized school staff can look up students and review their profiles, classes, sections, and enrollment status using the filters available for their branch and academic session.",
+    "features": [
+      "Search for a student by name or registration number.",
+      "Open a student profile and review available record details.",
+      "Review active and inactive enrollment status.",
+      "Check student and class information in available reports."
+    ],
+    "keywords": ["student list", "student profile", "enrollment status", "student status", "student search", "registration number", "records"],
+    "image": "student-status.png",
+    "imageAlt": "SouMed student status screen showing branch, academic session, class, and enrollment filters.",
+    "imageCaption": "Student status screen from the local SouMed training demo. The sample learner record is synthetic.",
+    "availability": "Student information is limited by the viewer's role, school branch, academic session, and configured permissions.",
+    "related": ["student-admissions", "attendance", "family-portals"]
+  },
+  {
+    "slug": "academics",
+    "title": "Academic setup",
+    "category": "Teaching & learning",
+    "summary": "Organize academic sessions, classes, sections, subjects, teacher assignments, and timetables.",
+    "description": "Give academic staff and administrators a place to prepare school structure and class schedules for the relevant academic session.",
+    "features": [
+      "Set up classes and sections for the school.",
+      "Create subjects and assign them to classes.",
+      "Allocate teachers to class groups where permitted.",
+      "Build and review class timetables."
+    ],
+    "keywords": ["academic session", "class", "section", "subject", "teacher allocation", "timetable", "class schedule", "school year"],
+    "image": "class-timetable.png",
+    "imageAlt": "SouMed class schedule screen with branch, class, and section filters.",
+    "imageCaption": "Class schedule screen from the local SouMed training demo.",
+    "availability": "Academic setup and timetable actions are available according to school configuration and administrator permissions.",
+    "related": ["attendance", "grading", "homework"]
+  },
+  {
+    "slug": "attendance",
+    "title": "Attendance",
+    "category": "Teaching & learning",
+    "summary": "Record and review student attendance by class, section, and date.",
+    "description": "Load the relevant class roster, record student attendance, and review attendance information through the available reports. Staff attendance is managed separately where that screen is enabled.",
+    "features": [
+      "Filter student rosters by class, section, and attendance date.",
+      "Record present, absent, late, or half-day attendance.",
+      "Review student or staff attendance reports where available.",
+      "Correct an existing attendance entry when authorized."
+    ],
+    "keywords": ["attendance register", "absence", "present", "late", "half day", "student attendance", "staff attendance", "class roster"],
+    "image": "attendance-class-roster.png",
+    "imageAlt": "SouMed student attendance screen with class and date filters and the class roster.",
+    "imageCaption": "Attendance screen from the local training demo; the example learner record is synthetic.",
+    "availability": "Attendance screens and editing rights depend on the enabled modules, selected branch, and user permissions.",
+    "related": ["academics", "grading", "reports"]
+  },
+  {
+    "slug": "grading",
+    "title": "Marks & grading",
+    "category": "Teaching & learning",
+    "summary": "Configure grading profiles, enter assessment marks, and review grading progress.",
+    "description": "Prepare grading profiles and assessment components, record marks through the grading workflows, and review the available grade sheets and incomplete-entry summaries.",
+    "features": [
+      "Configure grading profiles, terms, and assessment components.",
+      "Enter student marks in the Mark Entries workflow.",
+      "Review incomplete marks and mark-entry progress.",
+      "Open available grade sheets and result summaries."
+    ],
+    "keywords": ["marks", "mark entry", "grades", "grading profile", "assessment", "grade sheet", "report card", "incomplete marks", "student results"],
+    "image": "grading-profiles.png",
+    "imageAlt": "SouMed grading profile screen with terms, assessment weights, and grade settings.",
+    "imageCaption": "Grading profile screen from the local training demo. Assessment setup is school-configurable.",
+    "availability": "Available grade sheets and result pages depend on the school's grading setup and enabled report modules. The legacy exam-schedule screen is not included in this edition.",
+    "related": ["academics", "attendance", "reports"],
+    "resources": [
+      {
+        "label": "Teacher guide",
+        "href": "../../../docs/client-manuals/TEACHER_USER_GUIDE.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "homework",
+    "title": "Homework",
+    "category": "Teaching & learning",
+    "summary": "Share assignments, instructions, attachments, deadlines, and student submissions.",
+    "description": "Teachers can publish homework for their classes and review student submissions through the workflows available to their accounts. Students can check assignment details and submit their work in the student portal.",
+    "features": [
+      "Publish assignments with instructions and due dates.",
+      "Attach teaching materials where the upload option is available.",
+      "Review homework status and submitted work.",
+      "Let students view and submit assignments through their portal."
+    ],
+    "keywords": ["assignment", "homework upload", "deadline", "due date", "student submission", "teacher", "learning materials", "attachment"],
+    "image": null,
+    "imageAlt": null,
+    "imageCaption": null,
+    "availability": "Homework actions, accepted file types, and submission limits depend on school settings and the student's or teacher's assigned access.",
+    "related": ["academics", "family-portals", "live-classes"],
+    "resources": [
+      {
+        "label": "Student guide",
+        "href": "../../../docs/client-manuals/STUDENT_USER_GUIDE.pdf"
+      },
+      {
+        "label": "Teacher guide",
+        "href": "../../../docs/client-manuals/TEACHER_USER_GUIDE.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "online-exams",
+    "title": "Online exams",
+    "category": "Teaching & learning",
+    "summary": "Provide online assessment workflows for students when the module is enabled.",
+    "description": "The student portal can provide online exams alongside the school's academic information. Which assessment is available and when a student can access it depends on the school's configuration.",
+    "features": [
+      "Provide available online assessments through a student account.",
+      "Separate student exam access from teacher marks-entry workflows.",
+      "Limit access according to the student account and school settings."
+    ],
+    "keywords": ["online assessment", "student exam", "computer based exam", "CBT", "exams", "testing", "student portal"],
+    "image": null,
+    "imageAlt": null,
+    "imageCaption": null,
+    "availability": "Online exam screens are subject to deployment configuration and are not the same as the legacy exam-schedule screen.",
+    "related": ["grading", "family-portals"],
+    "resources": [
+      {
+        "label": "Student guide",
+        "href": "../../../docs/client-manuals/STUDENT_USER_GUIDE.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "live-classes",
+    "title": "Live classes",
+    "category": "Teaching & learning",
+    "summary": "Access live class sessions and class participation information where enabled.",
+    "description": "The platform includes live class workflows for scheduling or hosting sessions and reviewing participation where the required school setup is in place.",
+    "features": [
+      "Use available live class rooms for online lessons.",
+      "Review class participation information where enabled.",
+      "Keep live class access separate from regular class schedules."
+    ],
+    "keywords": ["virtual learning", "video class", "online lesson", "live classroom", "participation", "classroom"],
+    "image": null,
+    "imageAlt": null,
+    "imageCaption": null,
+    "availability": "Live classes require the corresponding module and any required school or service configuration.",
+    "related": ["academics", "homework", "family-portals"],
+    "resources": [
+      {
+        "label": "Student guide",
+        "href": "../../../docs/client-manuals/STUDENT_USER_GUIDE.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "fees",
+    "title": "Fees & payments",
+    "category": "Finance",
+    "summary": "Manage student invoices, fee allocations, payments, outstanding balances, and collection records.",
+    "description": "School finance staff can review fee arrangements and student invoices, record fee payments, and check balances and payment history using the workflows available to their role.",
+    "features": [
+      "Set up fee types and fee groups.",
+      "Allocate fees and create student invoices.",
+      "Record individual fee payments and review receipts.",
+      "Check outstanding invoices and payment history."
+    ],
+    "keywords": ["school fees", "tuition", "student invoice", "fee collection", "payment receipt", "balance", "outstanding", "discount", "fee reminders"],
+    "image": "invoice-list.png",
+    "imageAlt": "SouMed invoice list screen with branch, class, section, and student search filters.",
+    "imageCaption": "Invoice list screen from the local SouMed training demo; no live student data is shown.",
+    "availability": "Fee access and available collection options depend on branch setup, fee configuration, and finance permissions.",
+    "related": ["school-accounting", "finance-workflows", "family-portals"]
+  },
+  {
+    "slug": "school-accounting",
+    "title": "School accounting",
+    "category": "Finance",
+    "summary": "Review school revenue and expenses, account balances, cash activity, and financial summaries.",
+    "description": "Office accounting tools support recording and reviewing financial activity beyond student fee payments, including revenue, expenses, account balances, and reports.",
+    "features": [
+      "Review a financial overview by date and academic session.",
+      "Record non-fee revenue and operating expenses.",
+      "Track petty-cash activity and cash-to-bank transfers.",
+      "Review financial activity and available finance reports."
+    ],
+    "keywords": ["accounts", "accounting", "revenue", "income", "expenses", "expense", "petty cash", "bank deposit", "cashbook", "cashflow", "budgets"],
+    "image": "accounting-dashboard.png",
+    "imageAlt": "SouMed financial overview showing revenue, expenses, account balances, and reports.",
+    "imageCaption": "Financial overview from the local training demo. Sample amounts are not school results.",
+    "availability": "Accounting screens, currency, accounts, and reports depend on the school's financial setup and authorized roles.",
+    "related": ["fees", "finance-workflows", "reports"]
+  },
+  {
+    "slug": "finance-workflows",
+    "title": "Finance requests & approvals",
+    "category": "Finance",
+    "summary": "Submit, review, approve, and track finance requisitions through configured approval routes.",
+    "description": "Where the finance requisition workflow is enabled, authorized staff can submit a request, review its progress, and follow the configured approval and fulfillment process.",
+    "features": [
+      "Submit a requisition with the required department and supporting details.",
+      "Review, return, approve, or reject a request according to the assigned role.",
+      "Track request status and history.",
+      "Record fulfillment or payments where the workflow permits."
+    ],
+    "keywords": ["requisition", "finance approval", "request", "purchase request", "expense approvals", "budget", "department", "workflow", "fulfillment"],
+    "image": "requisitions.png",
+    "imageAlt": "SouMed finance requisitions screen with request review and status information.",
+    "imageCaption": "Requisition workflow screen from the local training demo.",
+    "availability": "Approval routes, request categories, and payment steps are configured for each school and may not be enabled everywhere.",
+    "related": ["school-accounting", "school-administration"]
+  },
+  {
+    "slug": "hr-payroll",
+    "title": "HR & payroll",
+    "category": "People & operations",
+    "summary": "Support employee records, staff attendance, leave applications, and payroll workflows.",
+    "description": "Human resources tools help authorized staff manage employee information, review leave requests, and process payroll according to the school's salary and payment setup.",
+    "features": [
+      "Add and review employee records.",
+      "Submit and review leave applications.",
+      "Set up salaries and process payroll for a pay period.",
+      "Review salary statements and payslips where available."
+    ],
+    "keywords": ["human resources", "HR", "employee", "staff records", "staff attendance", "salary", "payroll", "payslip", "leave request", "performance"],
+    "image": "payroll.png",
+    "imageAlt": "SouMed payroll screen with payroll period, staff, and payment review controls.",
+    "imageCaption": "Payroll workflow from the local training demo. The sample staff account is synthetic.",
+    "availability": "Employee and salary information is restricted to authorized users; payroll setup and available reports vary by school.",
+    "related": ["attendance", "school-accounting", "reports"]
+  },
+  {
+    "slug": "library",
+    "title": "Library",
+    "category": "People & operations",
+    "summary": "Maintain a school book catalogue and manage book issue, return, and renewal workflows.",
+    "description": "Library staff can maintain the available book catalogue and process issue or return workflows for eligible students and employees.",
+    "features": [
+      "Review and maintain the library book catalogue.",
+      "Issue books to eligible borrowers.",
+      "Review request status where approvals are required.",
+      "Record a return or renewal and review any applicable fine."
+    ],
+    "keywords": ["books", "book catalogue", "librarian", "borrow", "issue", "return", "renewal", "library fines"],
+    "image": "library-books.png",
+    "imageAlt": "SouMed school library book catalogue screen.",
+    "imageCaption": "Library catalogue screen from the local SouMed training demo.",
+    "availability": "Catalogue, borrower, issue, and approval actions depend on library setup and staff permissions.",
+    "related": ["student-records", "family-portals"]
+  },
+  {
+    "slug": "inventory",
+    "title": "Inventory availability",
+    "category": "People & operations",
+    "summary": "Check which inventory workflows are available in your school's deployment.",
+    "description": "Inventory appears in the system navigation. Product, purchasing, stock, and reporting actions could not be verified in the local portfolio demo, so this page does not claim that a particular inventory workflow is available.",
+    "features": [
+      "Inventory is listed as a system area in the staff navigation.",
+      "Ask your school administrator to confirm whether stock, products, or purchasing workflows are enabled.",
+      "Follow the approved school procedure for inventory transactions."
+    ],
+    "keywords": ["inventory", "stock", "supplies", "purchase items", "product catalogue", "product inventory"],
+    "image": null,
+    "imageAlt": null,
+    "imageCaption": null,
+    "availability": "Inventory transaction and reporting screens were not verifiable in the reference demo for this portfolio. Confirm the available workflows in your school's deployment before using this module.",
+    "related": ["school-accounting", "school-administration"]
+  },
+  {
+    "slug": "transport",
+    "title": "School transport",
+    "category": "People & operations",
+    "summary": "Configure school transport routes and review student assignments and daily bus lists.",
+    "description": "Where transport is enabled, authorized staff can manage routes and vehicles, assign students, and review the daily transport list.",
+    "features": [
+      "Configure transport routes and vehicles.",
+      "Review or update student transport assignments.",
+      "View daily bus lists with route and boarding information.",
+      "Use transport fee and report workflows where available."
+    ],
+    "keywords": ["bus", "school bus", "transport routes", "vehicles", "driver", "bus list", "boarding", "pickup", "drop off", "bus fee"],
+    "image": "transport-manifest.png",
+    "imageAlt": "SouMed daily bus list with route, bus, boarding, and drop-off information.",
+    "imageCaption": "Daily transport list from the local training demo. Transport tracking is separate from school attendance.",
+    "availability": "Transport setup and reports require the module to be enabled and assignments to be configured at the school.",
+    "related": ["student-records", "reports"]
+  },
+  {
+    "slug": "hostel",
+    "title": "Hostel management",
+    "category": "People & operations",
+    "summary": "Review hostel setup, rooms, and student accommodation assignments.",
+    "description": "The available hostel workflows support reviewing hostel setup and accommodation assignments for schools using the hostel module.",
+    "features": [
+      "Review configured hostels and rooms.",
+      "Manage student accommodation assignments where enabled.",
+      "Check student and hostel information using available filters."
+    ],
+    "keywords": ["boarding", "dormitory", "hostel rooms", "residential students", "accommodation", "room allocation", "hostel allocation"],
+    "image": "hostel-allocation.png",
+    "imageAlt": "SouMed hostel student allocation screen with hostel and room filters.",
+    "imageCaption": "Hostel allocation screen from the local SouMed training demo.",
+    "availability": "Hostel lists, room setup, and student assignment depend on the enabled school modules and assigned access.",
+    "related": ["student-records", "reports"]
+  },
+  {
+    "slug": "communications",
+    "title": "School communication",
+    "category": "Communication",
+    "summary": "Send school messages, bulk SMS, and email to the intended recipient groups.",
+    "description": "School teams can use messaging and bulk communication tools to share relevant updates with available student, parent, or staff groups.",
+    "features": [
+      "Send a school message or email from the messaging workflows.",
+      "Prepare bulk SMS and email campaigns where enabled.",
+      "Review campaign reports with authorized access.",
+      "Check recipients and message content before sending."
+    ],
+    "keywords": ["communication", "message", "SMS", "text message", "bulk email", "email campaign", "school announcement", "notification", "inbox"],
+    "image": "sms-campaign-reports.png",
+    "imageAlt": "SouMed bulk SMS and email campaign screen with branch, campaign, send type, and date filters.",
+    "imageCaption": "Bulk SMS and email screen from the local training demo.",
+    "availability": "Messaging channels, recipient groups, and campaign reports depend on school configuration and permissions.",
+    "related": ["family-portals", "student-records"]
+  },
+  {
+    "slug": "events",
+    "title": "School events",
+    "category": "People & operations",
+    "summary": "View or manage school events and event types where the module is enabled.",
+    "description": "The school events module can help staff organize and review school events. Visibility and available actions depend on the school's setup.",
+    "features": [
+      "View school events available to the account.",
+      "Manage events or event types where authorized.",
+      "Provide event information to portal users where the school setup supports it."
+    ],
+    "keywords": ["school calendar", "event schedule", "activities", "school events", "event types", "calendar"],
+    "image": null,
+    "imageAlt": null,
+    "imageCaption": null,
+    "availability": "The events module and portal visibility depend on the school's enabled features and assigned permissions.",
+    "related": ["communications", "family-portals"]
+  },
+  {
+    "slug": "reports",
+    "title": "Reports & insights",
+    "category": "Reports",
+    "summary": "Find academic, attendance, student, finance, payroll, and operations reports.",
+    "description": "Use the Reports Centre as a directory for authorized reports. Each report controls its own filters and any print or export options it supports.",
+    "features": [
+      "Browse academic, attendance, and student reports.",
+      "Review fee, accounting, and financial reports where enabled.",
+      "Find HR, payroll, department, and operations reports where available.",
+      "Apply the report's own filters before printing or exporting."
+    ],
+    "keywords": ["analytics", "report centre", "report center", "export", "CSV", "print", "academic results", "financial analytics", "attendance reports", "payroll reports"],
+    "image": "reports-centre.png",
+    "imageAlt": "SouMed Reports Centre with academic, attendance, student, finance, HR, and operations categories.",
+    "imageCaption": "Reports Centre from the local training demo. Report categories and exports may differ by role.",
+    "availability": "The report list, figures, print, and export options are limited to enabled modules and user permissions.",
+    "related": ["attendance", "grading", "school-accounting", "hr-payroll"]
+  },
+  {
+    "slug": "family-portals",
+    "title": "Parent & student portals",
+    "category": "Family access",
+    "summary": "Give parents and students role-appropriate access to school information and learning tools.",
+    "description": "Parents can select a linked child to review available attendance, grade sheets, invoices, events, and messages. Students can access their academic information and available tools such as homework, online exams, live classes, library, and messages.",
+    "features": [
+      "Let parents switch between linked children.",
+      "Provide parent access to relevant attendance, grades, invoices, events, and messages.",
+      "Provide students access to class information, timetable, attendance, homework, and grades.",
+      "Enable additional student tools where the school's setup allows."
+    ],
+    "keywords": ["parent app", "parent portal", "guardian", "student portal", "student account", "My Children", "family", "report card", "student login"],
+    "image": null,
+    "imageAlt": null,
+    "imageCaption": null,
+    "availability": "Portal access is read-oriented for official school records and depends on account linking, school configuration, and enabled features. Parent and student portal screenshots are not included because no such demo accounts were available.",
+    "related": ["student-records", "attendance", "grading", "homework"],
+    "resources": [
+      {
+        "label": "Parent portal guide (PDF)",
+        "href": "../../../docs/client-manuals/PARENT_USER_GUIDE.pdf"
+      },
+      {
+        "label": "Student portal guide (PDF)",
+        "href": "../../../docs/client-manuals/STUDENT_USER_GUIDE.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "school-administration",
+    "title": "School administration",
+    "category": "Administration",
+    "summary": "Manage school context, academic sessions, role permissions, and authorized settings.",
+    "description": "Authorized administrators can configure school and branch details, prepare academic sessions, manage role permissions, and confirm the modules and access rules for staff accounts.",
+    "features": [
+      "Review school and branch settings.",
+      "Prepare and manage academic sessions.",
+      "Configure roles and their permissions.",
+      "Control access according to the school's enabled modules and operating procedures."
+    ],
+    "keywords": ["administrator", "school settings", "branch", "user role", "permissions", "academic year", "session setup", "configuration", "access control"],
+    "image": "role-permissions.png",
+    "imageAlt": "SouMed administration roles screen with role names and permission controls.",
+    "imageCaption": "Role administration screen from the local training demo. Only authorized administrators should change access.",
+    "availability": "Administrative settings and role controls are limited to authorized accounts and can vary by school deployment.",
+    "related": ["student-admissions", "academics", "finance-workflows"]
+  }
+]
