@@ -1800,4 +1800,25 @@
   .hero-lede { max-width: 100%; }
   .hero-visual { width: 100%; max-width: 560px; margin-inline: auto; }
 }
+
+/* Classic editorial headings paired with the existing clean sans-serif body. */
+:root { --font-display: Georgia, "Times New Roman", serif; }
+h1, h2, h3, .section-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+.hero h1,
+.section-title,
+.feature-card h2,
+.showcase-copy h3,
+.solution-copy h2,
+.closing h2,
+.demo-copy h2,
+.solution-detail-card h2,
+.more-solutions h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
 .demo-contact-icon svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }

@@ -813,3 +813,19 @@ figcaption {
   .topbar.menu-open .menu-toggle .icon-menu { display: none; }
   .topbar.menu-open .menu-toggle .icon-close { display: block; }
 }
+
+/* Use the same classic heading face as the main portfolio pages. */
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+.module-copy h1,
+.guide-panel h2,
+.section-heading h2,
+.resource-panel h2,
+.availability h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
