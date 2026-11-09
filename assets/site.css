@@ -1800,3 +1800,4 @@
   .hero-lede { max-width: 100%; }
   .hero-visual { width: 100%; max-width: 560px; margin-inline: auto; }
 }
+.demo-contact-icon svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
