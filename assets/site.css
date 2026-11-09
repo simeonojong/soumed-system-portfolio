@@ -1548,8 +1548,29 @@
     .intro-section { padding-block: 69px 37px; }
     .section-eyebrow { color: var(--brand-blue); }
     .section-title { color: var(--brand-ink); }
-    .jump-card { border-radius: 5px; box-shadow: 0 8px 25px rgba(35,39,90,.035); }
-    .jump-icon { border-radius: 50%; background: #eff6ff; color: var(--brand-blue); }
+    .jump-card {
+      min-height: 128px;
+      padding: 20px;
+      border-color: #e5ebf4;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff 52%, #f8fbff 100%);
+      box-shadow: 0 8px 25px rgba(35, 39, 90, .045);
+    }
+    .jump-card:hover {
+      transform: translateY(-4px);
+      border-color: #b9d1ff;
+      background: #fff;
+      box-shadow: 0 16px 32px rgba(35, 73, 140, .11);
+    }
+    .jump-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 15px;
+      background: #edf4ff;
+      color: var(--brand-blue);
+    }
+    .jump-icon svg { width: 22px; height: 22px; stroke-width: 1.85; }
+    .jump-label { color: #20314f; font-size: 13px; font-weight: 700; letter-spacing: -.015em; }
     .showcase { background: #f7f8fc; }
     .showcase-row { gap: clamp(38px,7vw,86px); }
     .screen-wrap { border-color: #e8e9f2; border-radius: 7px; box-shadow: 0 20px 52px rgba(38,42,91,.13); }
@@ -1578,6 +1599,8 @@
       .hero-inner { grid-template-columns: minmax(0,.9fr) minmax(310px,1.1fr); gap: 28px; }
     }
     @media (max-width: 700px) {
+      .jump-card { min-height: 110px; padding: 15px; border-radius: 16px; }
+      .jump-icon { width: 42px; height: 42px; }
       .topbar-inner { flex-wrap: wrap; justify-content: center; padding-block: 9px; }
       .nav-links { width: 100%; flex-wrap: wrap; justify-content: center; gap: 10px 18px; padding-bottom: 5px; }
       .nav-links .optional-link { display: inline-flex; }
