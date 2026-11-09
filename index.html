@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#29277f">
+  <meta name="theme-color" content="#020617">
   <meta name="description" content="Explore SouMed, a school management system for student records, academics, finance, staff operations, communication, and reporting.">
   <meta property="og:title" content="SouMed | A connected view of school life">
   <meta property="og:description" content="Take a guided look at the SouMed School Management System.">
@@ -1504,98 +1504,116 @@
       }
     }
 
-    /* Refined agency inspired visual system for the SouMed portfolio. */
+    /* Clean, service-led layout inspired by the supplied references. */
     :root {
-      --brand-ink: #252843;
-      --brand-dark: #29277f;
-      --brand-blue: #535fd0;
-      --brand-tint: #f0f1ff;
-      --brand-highlight: #37c1dc;
-      --ink: #292b3b;
-      --muted: #74778b;
-      --line: #ececf3;
-      --wash: #f8f9fc;
+      --brand-ink: #0f172a;
+      --brand-dark: #020617;
+      --brand-blue: #2563eb;
+      --brand-tint: #eff6ff;
+      --brand-highlight: #60a5fa;
+      --ink: #0f172a;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --wash: #f8fafc;
     }
 
-    .topbar { border-bottom-color: #f0f0f5; }
+    .topbar { border-bottom-color: #eef1f5; }
     .brand-name { letter-spacing: .055em; }
     .nav-links { gap: 31px; }
-    .nav-links a { color: #45475d; }
+    .nav-links a { color: #536879; }
     .nav-links .button, .nav-links .button:hover { color: #fff; }
     .button { border-radius: 3px; background: var(--brand-blue); }
-    .button:hover { background: #424db9; box-shadow: 0 9px 22px rgba(54, 61, 154, .2); }
+    .button:hover { background: #1d4ed8; box-shadow: 0 9px 22px rgba(37, 99, 235, .2); }
 
     .hero {
-      color: #fff;
-      background:
-        radial-gradient(ellipse at 78% 45%, rgba(91, 108, 220, .44), transparent 38%),
-        linear-gradient(112deg, #272478 0%, #302e91 55%, #28277f 100%);
+      color: var(--brand-ink);
+      background: #fff;
     }
     .hero::before {
-      position: absolute; inset: 0; opacity: .16; content: ""; pointer-events: none;
-      background-image: linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
-      background-size: 34px 34px;
-      mask-image: linear-gradient(90deg, transparent, #000 40%, #000);
+      position: absolute; right: 4%; top: 5%; width: 550px; height: 550px;
+      border-radius: 50%; background: radial-gradient(circle, #eff6ff 0 57%, #dbeafe 57% 63%, transparent 63%);
+      content: ""; pointer-events: none;
     }
-    .hero::after { right: -245px; bottom: -505px; border-color: rgba(255,255,255,.12); }
-    .hero-inner { min-height: 510px; grid-template-columns: minmax(0,.88fr) minmax(410px,1.12fr); gap: 46px; padding-block: 53px 83px; }
-    .hero .eyebrow { color: #6ed7e8; }
+    .hero::after { right: -240px; bottom: -515px; border-color: rgba(37,99,235,.12); }
+    .hero-inner { min-height: 475px; grid-template-columns: minmax(0,.82fr) minmax(410px,1.18fr); gap: 46px; padding-block: 46px 75px; }
+    .hero .eyebrow { color: var(--brand-blue); }
     .hero .eyebrow::before { display: none; }
-    .hero h1 { max-width: 520px; color: white; font-size: clamp(43px,5vw,62px); letter-spacing: -.05em; }
-    .hero-lede { max-width: 465px; color: #e0e2f7; font-size: 16px; line-height: 1.65; }
-    .hero-actions .button { min-width: 160px; min-height: 48px; background: #31bdd8; color: #16316d; }
-    .hero-actions .button:hover { background: #59cde2; }
-    .text-link, .text-link:hover { color: #fff; }
-    .hero-points { color: #e0e2f7; }
-    .hero-points li::before { background: rgba(85,209,224,.18); color: #68d5e6; }
+    .hero h1 { max-width: 470px; color: var(--brand-ink); font-size: clamp(43px,5vw,60px); letter-spacing: -.05em; }
+    .hero-lede { max-width: 455px; color: #526579; font-size: 16px; line-height: 1.65; }
+    .hero-actions .button { min-width: 160px; min-height: 48px; background: var(--brand-blue); color: #fff; }
+    .hero-actions .button:hover { background: #1d4ed8; }
+    .text-link, .text-link:hover { color: #40536a; }
+    .hero-points { color: #53677d; }
+    .hero-points li::before { background: #dbeafe; color: #2563eb; }
     .hero-visual { padding: 8px 0 22px 12px; }
-    .window { border: 7px solid rgba(255,255,255,.94); border-radius: 8px; box-shadow: 0 28px 68px rgba(12,12,57,.38); transform: none; }
+    .window { border: 7px solid rgba(255,255,255,.98); border-radius: 8px; box-shadow: 0 25px 66px rgba(25,62,112,.2); transform: none; }
     .hero-shot { aspect-ratio: 1.42 / 1; }
     .hero-caption { right: -17px; bottom: 0; border: 0; border-radius: 6px; }
     .hero-float { border-radius: 6px; }
+    .hero-visual::before { position: absolute; z-index: -1; top: 0; right: 3%; width: 70%; height: 88%; border-radius: 48% 48% 44% 44%; background: #eff6ff; content: ""; }
 
     .feature-band { margin-top: -54px; padding-bottom: 15px; background: linear-gradient(180deg, transparent 0 54px, #fff 54px); }
     .feature-grid { gap: 18px; }
     .feature-card { min-height: 177px; align-items: center; padding: 22px; border-radius: 5px; text-align: center; box-shadow: 0 14px 38px rgba(35,39,90,.11); }
     .feature-card-featured { transform: translateY(-9px); }
-    .feature-card-icon { width: 39px; height: 39px; margin-bottom: 13px; border-radius: 50%; background: #e8f8fc; color: #4658c6; }
+    .feature-card-icon { width: 39px; height: 39px; margin-bottom: 13px; border-radius: 50%; background: #eff6ff; color: #2563eb; }
     .feature-card p { max-width: 290px; margin: 7px 0 12px; }
     .feature-card-link { margin-top: auto; padding: 7px 14px; border-radius: 3px; background: var(--brand-dark); color: white; }
-    .feature-card-featured .feature-card-link { background: #34bbd6; color: #17295e; }
+    .feature-card-featured .feature-card-link { background: var(--brand-blue); color: white; }
 
     .audience-strip { border: 0; background: #fff; }
     .audience-inner { min-height: 95px; gap: 13px 39px; }
     .audience-label { color: var(--brand-ink); }
     .audience-inner svg { stroke: var(--brand-blue); }
-    .intro-section { padding-block: 66px 37px; }
+    .solution-band { overflow: hidden; padding-block: 67px; background: var(--brand-dark); color: #fff; }
+    .solution-inner { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,.95fr); align-items: center; gap: clamp(38px,7vw,88px); }
+    .solution-visual { position: relative; }
+    .solution-visual::before { position: absolute; z-index: 0; left: -110px; bottom: -120px; width: 470px; height: 470px; border: 38px solid rgba(96,165,250,.22); border-radius: 50%; content: ""; }
+    .solution-image { position: relative; z-index: 1; display: block; width: 100%; border: 8px solid #fff; border-radius: 7px; box-shadow: 0 24px 60px rgba(0,0,0,.26); }
+    .solution-copy .section-eyebrow { color: #93c5fd; }
+    .solution-copy h2 { max-width: 490px; margin: 0; color: #fff; font-size: clamp(30px,4vw,43px); letter-spacing: -.04em; line-height: 1.13; }
+    .solution-copy > p { margin: 14px 0 0; color: #cbd5e1; font-size: 14px; line-height: 1.7; }
+    .solution-steps { display: grid; gap: 18px; margin: 26px 0 0; padding: 0; list-style: none; }
+    .solution-steps li { display: grid; grid-template-columns: 34px 1fr; align-items: start; gap: 13px; }
+    .solution-step-number { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 50%; background: rgba(96,165,250,.2); color: #bfdbfe; font-size: 12px; font-weight: 800; }
+    .solution-steps strong { display: block; color: #fff; font-size: 13px; }
+    .solution-steps span:last-child { display: block; margin-top: 3px; color: #aebbd0; font-size: 11px; line-height: 1.45; }
+    .solution-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .solution-actions .button { background: #fff; color: var(--brand-dark); }
+    .solution-actions .text-link { padding: 0 12px; color: #fff; }
+    .intro-section { padding-block: 69px 37px; }
     .section-eyebrow { color: var(--brand-blue); }
     .section-title { color: var(--brand-ink); }
     .jump-card { border-radius: 5px; box-shadow: 0 8px 25px rgba(35,39,90,.035); }
-    .jump-icon { border-radius: 50%; background: #eff0ff; color: var(--brand-blue); }
+    .jump-icon { border-radius: 50%; background: #eff6ff; color: var(--brand-blue); }
     .showcase { background: #f7f8fc; }
     .showcase-row { gap: clamp(38px,7vw,86px); }
     .screen-wrap { border-color: #e8e9f2; border-radius: 7px; box-shadow: 0 20px 52px rgba(38,42,91,.13); }
-    .showcase-tag { border-radius: 3px; background: #eff0ff; color: #454fba; }
-    .number { color: #535fd0; }
-    .number::before { background: #37bdd6; }
+    .showcase-tag { border-radius: 3px; background: #eff6ff; color: #1d4ed8; }
+    .number { color: #2563eb; }
+    .number::before { background: #60a5fa; }
     .catalogue { padding-top: 66px; }
     .catalogue-search-wrap input { border-radius: 5px; }
     .filter-chip.is-active { border-color: var(--brand-dark); background: var(--brand-dark); }
     .module-tile { border-radius: 5px; }
     .module-tile:hover { border-color: #a9adeb; box-shadow: 0 13px 28px rgba(35,39,90,.09); }
-    .closing { background: linear-gradient(115deg,#29277f,#353c9d); }
-    .closing .section-eyebrow { color: #61d2e3; }
-    .closing .button { background: #fff; color: #302f87; }
-    .footer { background: #252477; }
+    .closing { background: radial-gradient(ellipse at 95% 0%, rgba(37,99,235,.32), transparent 38%), var(--brand-dark); }
+    .closing .section-eyebrow { color: var(--brand-highlight); }
+    .closing .button { background: #fff; color: var(--brand-dark); }
+    .footer { background: var(--brand-dark); }
 
     @media (max-width: 950px) {
       .hero-inner { grid-template-columns: minmax(0,.9fr) minmax(310px,1.1fr); gap: 28px; }
     }
     @media (max-width: 700px) {
+      .hero::before { right: -180px; top: 35%; width: 420px; height: 420px; }
       .hero-inner { gap: 30px; padding-block: 52px 69px; }
       .hero h1 { font-size: clamp(42px,10vw,58px); }
       .hero-visual { padding: 0 4px 18px; }
       .hero-caption { right: -1px; }
+      .solution-band { padding-block: 48px; }
+      .solution-inner { grid-template-columns: 1fr; gap: 34px; }
+      .solution-visual { width: min(100%,560px); margin-inline: auto; }
       .feature-band { margin-top: -35px; background: linear-gradient(180deg,transparent 0 35px,#fff 35px); }
       .feature-grid { grid-template-columns: 1fr; gap: 12px; }
       .feature-card, .feature-card-featured { min-height: auto; align-items: flex-start; transform: none; text-align: left; }
@@ -1695,6 +1713,28 @@
         <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><path d="M3.5 20v-1.6a5.5 5.5 0 0 1 11 0V20zM16 5.2a3.1 3.1 0 0 1 0 5.9M17.5 14a4.8 4.8 0 0 1 3 4.4V20h-3"></path></svg>School administrators</span>
         <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V7.5L12 3l8 4.5V20M8 20v-6h8v6M8 9h.01M12 9h.01M16 9h.01"></path></svg>Staff &amp; teachers</span>
         <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><path d="M3.5 20v-1.6a5.5 5.5 0 0 1 11 0V20zM16 5.2a3.1 3.1 0 0 1 0 5.9M17.5 14a4.8 4.8 0 0 1 3 4.4V20h-3"></path></svg>Parents &amp; students</span>
+      </div>
+    </section>
+
+    <section class="solution-band" aria-labelledby="solution-title">
+      <div class="wrap solution-inner">
+        <div class="solution-visual">
+          <img class="solution-image" src="assets/01-dashboard.png" alt="SouMed school dashboard from the training demo" loading="lazy">
+        </div>
+        <div class="solution-copy">
+          <p class="section-eyebrow">A simpler school day</p>
+          <h2 id="solution-title">The right information, all in one place.</h2>
+          <p>SouMed connects everyday school workflows, with tools and access shaped by each school’s setup.</p>
+          <ol class="solution-steps">
+            <li><span class="solution-step-number">1</span><span><strong>Set up your school</strong><span>Organize academic sessions, classes, and roles.</span></span></li>
+            <li><span class="solution-step-number">2</span><span><strong>Bring records together</strong><span>Connect student, teaching, finance, and staff workflows.</span></span></li>
+            <li><span class="solution-step-number">3</span><span><strong>See the school day clearly</strong><span>Find the screens and reports relevant to your role.</span></span></li>
+          </ol>
+          <div class="solution-actions">
+            <a class="button" href="#modules">Explore the modules <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#explore">See it in action <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
       </div>
     </section>
 
