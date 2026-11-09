@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#020617">
+  <meta name="description" content="Search and browse the SouMed school management module directory.">
+  <meta property="og:title" content="SouMed Modules | Browse the directory">
+  <meta property="og:description" content="Search and browse the SouMed school management module directory.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="../assets/soumed-logo.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <title>SouMed Modules | Browse the directory</title>
+</head>
+<body>
+  <header class="topbar" id="top">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="../" aria-label="SouMed home">
+        <span class="brand-mark" aria-hidden="true"><img src="../assets/soumed-logo.png" alt=""></span>
+        <span>
+          <span class="brand-name">SOUMED TECHNOLOGIES</span>
+          <span class="brand-caption">School Management System</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="optional-link" href="../platform/">Platform</a>
+        <a href="../modules/">Modules</a>
+        <a class="optional-link" href="../demo/">Request a demo</a>
+        <a class="button" href="../modules/">
+          Find a module
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+<main id="main">
+  <section class="intro-section" aria-labelledby="modules-page-title">
+    <div class="wrap">
+      <p class="section-eyebrow">SouMed module directory</p>
+      <h1 class="section-title" id="modules-page-title">Find the tools you need.</h1>
+      <p class="section-lede">Search by task or browse by category. Open any module for a focused overview.</p>
+    </div>
+  </section>
+    <section class="catalogue" id="modules" data-catalogue-url="../modules.json" data-module-base="" aria-labelledby="catalogue-title">
+      <div class="wrap">
+        <header class="catalogue-heading">
+          <div>
+            <p class="section-eyebrow">Search the system</p>
+            <h2 class="section-title" id="catalogue-title">Find a feature or module.</h2>
+            <p class="section-lede">Search the tools, tasks, and school workflows you want to explore.</p>
+          </div>
+          <p class="catalogue-count"><span id="module-count">Loading modules...</span></p>
+        </header>
+        <div class="catalogue-search-wrap">
+          <label class="sr-only" for="module-search">Search SouMed features</label>
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="m16 16 4.5 4.5"></path></svg>
+          <input id="module-search" type="search" placeholder="Try “attendance”, “fees”, “parent portal”..." autocomplete="off" spellcheck="false">
+          <kbd>/</kbd>
+        </div>
+        <div class="catalogue-filters" id="module-filters" aria-label="Filter modules by category">
+          <button class="filter-chip is-active" type="button" data-category="all" aria-pressed="true">All features</button>
+        </div>
+        <div class="module-grid-search" id="module-results" aria-live="polite" aria-busy="true">
+          <p class="catalogue-message">Loading the module directory...</p>
+        </div>
+      </div>
+    </section>
+
+
+</main>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <div class="footer-brand">SOUMED TECHNOLOGIES · SCHOOL MANAGEMENT SYSTEM</div>
+        <p class="footer-note">Screens shown are from a local training demo with synthetic records. Features and access vary by school setup, enabled modules, and user permissions.</p>
+        <a class="footer-company" href="https://soumed.org/about" target="_blank" rel="noopener noreferrer">About SouMed Technologies <span aria-hidden="true">↗</span></a>
+        <div class="footer-contact" aria-label="SouMed contact details">
+          <a href="tel:+231880755412">Call 0880755412</a>
+          <a href="mailto:info@soumed.org">info@soumed.org</a>
+          <a href="https://wa.me/231880755412" target="_blank" rel="noopener noreferrer">WhatsApp SouMed</a>
+        </div>
+      </div>
+      <a class="footer-top" href="../">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="../assets/catalogue.js" defer></script>
+</body>
+</html>

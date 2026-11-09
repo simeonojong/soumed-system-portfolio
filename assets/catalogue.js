@@ -3,6 +3,7 @@
   const filters = document.querySelector("#module-filters");
   const results = document.querySelector("#module-results");
   const count = document.querySelector("#module-count");
+  const catalogue = search?.closest(".catalogue");
 
   if (!search || !filters || !results || !count) {
     return;
@@ -10,6 +11,8 @@
 
   let modules = [];
   let selectedCategory = "all";
+  const catalogueUrl = catalogue?.dataset.catalogueUrl ?? "modules.json";
+  const moduleBase = catalogue?.dataset.moduleBase ?? "modules/";
 
   const normalized = (value) => value
     .normalize("NFD")
@@ -54,7 +57,7 @@
   function createTile(module) {
     const link = document.createElement("a");
     link.className = "module-tile";
-    link.href = `modules/${encodeURIComponent(module.slug)}/`;
+    link.href = `${moduleBase}${encodeURIComponent(module.slug)}/`;
 
     const category = document.createElement("span");
     category.className = "module-tile-category";
@@ -117,7 +120,7 @@
     results.setAttribute("aria-busy", "true");
 
     try {
-      const response = await fetch("modules.json", {
+      const response = await fetch(catalogueUrl, {
         headers: { Accept: "application/json" }
       });
 
