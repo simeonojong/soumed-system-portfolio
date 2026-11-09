@@ -1782,7 +1782,21 @@
   }
   .topbar.menu-open .menu-toggle .icon-menu { display: none; }
   .topbar.menu-open .menu-toggle .icon-close { display: block; }
-  .hero-inner { grid-template-columns: minmax(0, 1fr); }
-  .hero-copy { min-width: 0; }
-  .hero h1 { max-width: 15ch; text-wrap: balance; }
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+    padding-block: 42px 56px;
+  }
+  .hero-copy { width: 100%; max-width: 640px; min-width: 0; }
+  .hero h1 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(36px, 9vw, 50px);
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+  .hero-lede { max-width: 100%; }
+  .hero-visual { width: 100%; max-width: 560px; margin-inline: auto; }
 }
