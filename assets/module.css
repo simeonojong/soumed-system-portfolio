@@ -111,12 +111,6 @@ a {
   letter-spacing: .08em;
 }
 
-.brand-caption {
-  display: block;
-  margin-top: 3px;
-  color: var(--muted);
-  font-size: 10px;
-}
 
 .header-nav {
   display: flex;
