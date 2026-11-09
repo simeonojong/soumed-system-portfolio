@@ -1793,3 +1793,5 @@ h1, h2, h3, .section-title {
 .delivery-info-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
 .delivery-note { margin: 18px 0 0; color: var(--muted); font-size: 12px; }
 @media (max-width: 760px) { .solution-info-grid, .delivery-info-grid { grid-template-columns: 1fr; } .solution-card-art { height: 205px; } .solution-visual-preview img { aspect-ratio: 1.25 / 1; } .solution-info-section, .delivery-info-section { padding-block: 48px; } }
+.solution-price-range { display: inline-flex; align-items: center; gap: 5px; margin: 0 24px 14px; padding: 7px 10px; border-radius: 999px; background: #edf4ff; color: #53657d; font-size: 12px; }
+.solution-price-range strong { color: var(--brand-blue); font-weight: 700; }
