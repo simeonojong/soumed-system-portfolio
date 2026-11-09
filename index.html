@@ -1185,6 +1185,33 @@
       text-decoration: none;
     }
 
+    .demo-section { padding-block: 78px; background: #f8fafc; }
+    .demo-inner { display: grid; grid-template-columns: minmax(0,.8fr) minmax(380px,1.2fr); align-items: start; gap: clamp(34px,7vw,90px); }
+    .demo-copy { position: sticky; top: 105px; }
+    .demo-copy h2 { max-width: 460px; margin: 0; color: var(--brand-ink); font-size: clamp(32px,4vw,46px); letter-spacing: -.045em; line-height: 1.12; }
+    .demo-copy > p:not(.section-eyebrow) { max-width: 430px; margin: 15px 0 0; color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .demo-contact-list { display: grid; gap: 12px; margin: 25px 0 0; padding: 0; list-style: none; }
+    .demo-contact-list a { display: inline-flex; align-items: center; gap: 10px; color: var(--brand-ink); font-size: 13px; font-weight: 700; text-decoration: none; }
+    .demo-contact-list a:hover { color: var(--brand-blue); }
+    .demo-contact-icon { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 50%; background: #eff6ff; color: var(--brand-blue); }
+    .demo-form { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; padding: clamp(22px,4vw,34px); border: 1px solid #e6eaf2; border-radius: 9px; background: #fff; box-shadow: 0 18px 48px rgba(15,23,42,.08); }
+    .demo-form label { display: grid; gap: 7px; color: #334155; font-size: 12px; font-weight: 700; }
+    .demo-form input, .demo-form select, .demo-form textarea { width: 100%; min-height: 45px; padding: 10px 12px; border: 1px solid #dbe2ec; border-radius: 5px; outline: none; background: #fff; color: var(--ink); font: inherit; font-size: 13px; }
+    .demo-form textarea { min-height: 105px; resize: vertical; }
+    .demo-form input:focus, .demo-form select:focus, .demo-form textarea:focus { border-color: #60a5fa; box-shadow: 0 0 0 3px rgba(37,99,235,.12); }
+    .demo-field-full { grid-column: 1 / -1; }
+    .demo-form .button { justify-self: start; border: 0; cursor: pointer; }
+    .demo-destinations { display: grid; gap: 12px; grid-column: 1 / -1; padding-top: 16px; border-top: 1px solid var(--line); }
+    .demo-destinations[hidden] { display: none; }
+    .demo-destinations p { margin: 0; color: #475569; font-size: 12px; line-height: 1.55; }
+    .demo-destination-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .demo-destination-links a { display: inline-flex; min-height: 42px; align-items: center; justify-content: center; gap: 8px; padding: 0 14px; border: 1px solid var(--brand-blue); border-radius: 4px; color: var(--brand-blue); font-size: 12px; font-weight: 750; text-decoration: none; }
+    .demo-destination-links a:first-child { background: var(--brand-blue); color: #fff; }
+    .demo-destination-links a:hover { box-shadow: 0 5px 16px rgba(37,99,235,.16); transform: translateY(-1px); }
+    .footer-contact { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 12px; }
+    .footer-contact a { color: #dbeafe; font-size: 12px; font-weight: 700; text-decoration: none; }
+    .footer-contact a:hover { color: #60a5fa; }
+
     dialog {
       width: min(1100px, calc(100vw - 32px));
       max-width: none;
@@ -1461,6 +1488,8 @@
       .footer-inner {
         align-items: flex-start;
       }
+      .demo-inner { grid-template-columns: 1fr; }
+      .demo-copy { position: static; }
     }
 
     @media (max-width: 420px) {
@@ -1492,6 +1521,9 @@
       .jump-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
+      .demo-form { grid-template-columns: 1fr; }
+      .demo-field-full, .demo-destinations { grid-column: auto; }
 
     }
 
@@ -1638,6 +1670,7 @@
       <nav class="nav-links" aria-label="Main navigation">
         <a class="optional-link" href="#platform">Platform</a>
         <a href="#modules">Modules</a>
+        <a class="optional-link" href="#demo">Request a demo</a>
         <a class="button" href="#modules">
           Find a module
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
@@ -1952,6 +1985,35 @@
       </div>
     </section>
 
+    <section class="demo-section" id="demo" aria-labelledby="demo-title">
+      <div class="wrap demo-inner">
+        <div class="demo-copy">
+          <p class="section-eyebrow">Let’s talk about your school</p>
+          <h2 id="demo-title">Request a SouMed demo.</h2>
+          <p>Tell us a little about your school and we’ll arrange a walkthrough of the workflows that matter to your team.</p>
+          <ul class="demo-contact-list" aria-label="Contact SouMed directly">
+            <li><a href="tel:+231880755412"><span class="demo-contact-icon" aria-hidden="true">☎</span>Call 0880755412</a></li>
+            <li><a href="mailto:info@soumed.org"><span class="demo-contact-icon" aria-hidden="true">@</span>info@soumed.org</a></li>
+          </ul>
+        </div>
+        <form class="demo-form" id="demo-request-form">
+          <label>Your name<input name="name" autocomplete="name" required maxlength="100" placeholder="Full name"></label>
+          <label>School name<input name="school" autocomplete="organization" required maxlength="140" placeholder="School or organization"></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" required maxlength="180" placeholder="you@school.org"></label>
+          <label>Phone or WhatsApp<input name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="0880 755 412"></label>
+          <label class="demo-field-full">What would you like to see?<textarea name="message" maxlength="1200" placeholder="For example: admissions, attendance, fees, parent portal…"></textarea></label>
+          <button class="button demo-field-full" type="submit">Continue with demo request <span aria-hidden="true">→</span></button>
+          <div class="demo-destinations" id="demo-destinations" hidden aria-live="polite">
+            <p>Your request is ready. Choose where to send it; your email or WhatsApp app will open so you can review and send the message.</p>
+            <div class="demo-destination-links">
+              <a id="demo-email-link" href="mailto:info@soumed.org">Send by email <span aria-hidden="true">↗</span></a>
+              <a id="demo-whatsapp-link" href="https://wa.me/231880755412">Send on WhatsApp <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <section class="closing" aria-labelledby="closing-title">
       <div class="wrap closing-inner">
         <div>
@@ -1973,6 +2035,11 @@
         <div class="footer-brand">SOUMED TECHNOLOGIES · SCHOOL MANAGEMENT SYSTEM</div>
         <p class="footer-note">Screens shown are from a local training demo with synthetic records. Features and access vary by school setup, enabled modules, and user permissions.</p>
         <a class="footer-company" href="https://soumed.org/about" target="_blank" rel="noopener noreferrer">About SouMed Technologies <span aria-hidden="true">↗</span></a>
+        <div class="footer-contact" aria-label="SouMed contact details">
+          <a href="tel:+231880755412">Call 0880755412</a>
+          <a href="mailto:info@soumed.org">info@soumed.org</a>
+          <a href="https://wa.me/231880755412" target="_blank" rel="noopener noreferrer">WhatsApp SouMed</a>
+        </div>
       </div>
       <a class="footer-top" href="#top">Back to top ↑</a>
     </div>
@@ -2034,6 +2101,41 @@
       dialog.addEventListener("close", () => {
         lightboxImage.removeAttribute("src");
         lastTrigger?.focus();
+      });
+    })();
+
+    (() => {
+      const form = document.querySelector("#demo-request-form");
+      const destinations = document.querySelector("#demo-destinations");
+      const emailLink = document.querySelector("#demo-email-link");
+      const whatsappLink = document.querySelector("#demo-whatsapp-link");
+      if (!form || !destinations || !emailLink || !whatsappLink) return;
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+
+        const fields = new FormData(form);
+        const name = String(fields.get("name") || "").trim();
+        const school = String(fields.get("school") || "").trim();
+        const email = String(fields.get("email") || "").trim();
+        const phone = String(fields.get("phone") || "").trim();
+        const message = String(fields.get("message") || "").trim();
+        const body = [
+          "Hello SouMed, I would like to request a product demo.",
+          "",
+          `Name: ${name}`,
+          `School: ${school}`,
+          `Email: ${email}`,
+          `Phone / WhatsApp: ${phone || "Not provided"}`,
+          `Interested in: ${message || "General SouMed walkthrough"}`
+        ].join("\n");
+
+        emailLink.href = `mailto:info@soumed.org?subject=${encodeURIComponent(`SouMed demo request - ${school}`)}&body=${encodeURIComponent(body)}`;
+        whatsappLink.href = `https://wa.me/231880755412?text=${encodeURIComponent(body)}`;
+        destinations.hidden = false;
+        destinations.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        emailLink.focus({ preventScroll: true });
       });
     })();
   </script>
