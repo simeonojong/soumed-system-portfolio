@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
-  --brand-ink: #0f172a;
-  --brand-dark: #020617;
-  --brand-blue: #2563eb;
-  --brand-tint: #eff6ff;
-  --brand-highlight: #60a5fa;
-  --ink: #0f172a;
+  --brand-ink: #252843;
+  --brand-dark: #29277f;
+  --brand-blue: #535fd0;
+  --brand-tint: #f0f1ff;
+  --brand-highlight: #37c1dc;
+  --ink: #292b3b;
   --muted: #64748b;
   --line: #e2e8f0;
-  --wash: #f8fafc;
+  --wash: #f8f9fc;
   --white: #fff;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-synthesis: none;
@@ -145,7 +145,7 @@ a {
 }
 
 .header-nav .nav-cta:hover {
-  background: #1d4ed8;
+  background: #424db9;
   color: #fff;
 }
 
@@ -185,8 +185,8 @@ a {
   padding: 7px 10px;
   border: 1px solid #dbeafe;
   border-radius: 20px;
-  background: #eff6ff;
-  color: #1d4ed8;
+  background: #f0f1ff;
+  color: #454fba;
   font-size: 10px;
   font-weight: 750;
 }
@@ -242,7 +242,7 @@ h1 {
 
 .primary-link:hover {
   transform: translateY(-1px);
-  background: #1d4ed8;
+  background: #424db9;
 }
 
 .module-visual {
@@ -284,7 +284,7 @@ h1 {
 }
 
 .screen-bar > span:nth-child(3) {
-  background: #60a5fa;
+  background: #37c1dc;
 }
 
 .screen-bar > span:last-child {
@@ -313,7 +313,7 @@ h1 {
 .resource-link:focus-visible,
 .back-link:focus-visible,
 .lightbox-close:focus-visible {
-  outline: 3px solid #60a5fa;
+  outline: 3px solid #37c1dc;
   outline-offset: 3px;
 }
 
@@ -331,7 +331,7 @@ figcaption {
   border-radius: 12px;
   background:
     radial-gradient(ellipse at 100% 0, rgba(37, 99, 235, .08), transparent 50%),
-    #f8fafc;
+    #f8f9fc;
 }
 
 .guide-icon {
@@ -340,7 +340,7 @@ figcaption {
   height: 39px;
   place-items: center;
   border-radius: 11px;
-  background: #eff6ff;
+  background: #f0f1ff;
   color: var(--brand-blue);
   font-size: 21px;
   font-weight: 750;
@@ -369,8 +369,8 @@ figcaption {
   margin-top: 17px;
   padding: 7px 10px;
   border-radius: 5px;
-  background: #eff6ff;
-  color: #1d4ed8;
+  background: #f0f1ff;
+  color: #454fba;
   font-size: 10px;
   font-weight: 720;
 }
@@ -425,7 +425,7 @@ figcaption {
   height: 18px;
   place-items: center;
   border-radius: 50%;
-  background: #eff6ff;
+  background: #f0f1ff;
   color: var(--brand-blue);
   content: "✓";
   font-size: 11px;
@@ -474,7 +474,7 @@ figcaption {
   padding: 20px 21px;
   border: 1px solid #dbeafe;
   border-radius: 8px;
-  background: #eff6ff;
+  background: #f0f1ff;
 }
 
 .availability-icon {
@@ -485,7 +485,7 @@ figcaption {
   place-items: center;
   border-radius: 50%;
   background: #dbeafe;
-  color: #1d4ed8;
+  color: #454fba;
   font-size: 13px;
   font-weight: 800;
 }
