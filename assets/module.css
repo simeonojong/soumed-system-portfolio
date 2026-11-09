@@ -737,6 +737,24 @@ figcaption {
   }
 }
 
+@media (max-width: 520px) {
+  html { scroll-padding-top: 122px; }
+  .topbar-inner { align-items: flex-start; }
+  .header-nav {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: start;
+    gap: 6px 14px;
+  }
+  .header-nav a {
+    display: inline-flex;
+    min-height: 38px;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .header-nav .nav-cta { padding: 0 10px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

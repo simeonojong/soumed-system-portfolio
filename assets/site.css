@@ -1662,3 +1662,52 @@
 .more-solutions h2 { margin: 8px 0; color: var(--brand-ink); font-size: clamp(24px, 3vw, 34px); letter-spacing: -.04em; }
 .more-solutions p:last-child { max-width: 600px; margin: 0; color: var(--muted); line-height: 1.7; }
 @media (max-width: 760px) { .more-solutions-inner { align-items: flex-start; flex-direction: column; } .solution-directory .feature-grid { grid-template-columns: 1fr; } }
+
+/* Phone layout: keep every destination easy to reach without crowding the header. */
+@media (max-width: 700px) {
+  html { scroll-padding-top: 122px; }
+  .topbar-inner {
+    display: grid;
+    justify-content: stretch;
+    justify-items: start;
+    gap: 8px;
+    padding-block: 9px 10px;
+  }
+  .nav-links {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: start;
+    gap: 6px 14px;
+    padding: 0;
+  }
+  .nav-links a {
+    display: inline-flex;
+    min-height: 38px;
+    align-items: center;
+    font-size: 12px;
+  }
+  .nav-links .optional-link { display: inline-flex; }
+  .nav-links .button {
+    min-height: 38px;
+    justify-self: start;
+    padding-inline: 11px;
+    white-space: nowrap;
+  }
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .demo-contact-list a { min-height: 44px; }
+  .demo-destination-links a { min-height: 44px; }
+}
+
+@media (max-width: 360px) {
+  .nav-links { column-gap: 10px; }
+  .nav-links a { font-size: 11px; }
+  .nav-links .button { padding-inline: 9px; }
+  .hero h1 { font-size: 40px; }
+  .hero-caption { right: 0; max-width: calc(100% - 8px); }
+  .demo-destination-links { flex-direction: column; align-items: stretch; }
+}
